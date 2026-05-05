@@ -8,12 +8,45 @@ import logging
 #Setting up logging
 logging.basicConfig(level=logging.INFO, format='%(message)s')
 logger = logging.getLogger(__name__)
-
+IGNORE_FOLDER = [".next", "node_modules", "__pycache__"]
 class FolderMonitor(FileSystemEventHandler):
+    def __init__(self):
+        self.event_count = 0
+        self.start_time = time.time()
 
+        # Count events
+        self.event_count += 1
+
+        current_time = time.time()
+        time_diff = current_time - self.start_time
+
+        # Suspicious detection
+        if time_diff <= 5:
+            if self.event_count >10:
+                print(f" Suspicious Activity: {self.event_count} events in {round(time_diff,2)} seconds")
+        else: 
+            self.event_count = 0
+            self.start_time = current_time
+        
+        # Structured event data
+        event_data = {
+            "event_type" : event_type,
+            "file_path" : path,
+            "timestamp" : datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        }
+
+        #Print clean Output 
+        logger.info(f"[{event_data['timestamp']}] {event_data['event_type']} - {event_data['file_path']}")
+
+        #Save to file
+        self.save_event(event_data)
+        
     """Simple file system event handler."""
 
     def log(self, event_type, path):
+        # Ignore unneccessary folders
+        if any(folder in path for folder in IGNORE_FOLDER):
+            return
         timestamp = datetime.now().strftime('%H:%M:%S')
         logger.info(f"[{timestamp}] {event_type} - {path}")
 
