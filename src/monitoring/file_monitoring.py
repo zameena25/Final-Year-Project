@@ -6,6 +6,7 @@ from pathlib import Path
 import logging
 from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
+from heuristic_engine import process_event 
 
 # Config
 
@@ -32,6 +33,8 @@ class FolderMonitor(FileSystemEventHandler):
         self.event_count = 0
         self.window_start = time.time()
         self.alert_fired = False
+        self.event_buffer = []
+
 
     # Core event router
 
@@ -47,6 +50,9 @@ class FolderMonitor(FileSystemEventHandler):
             "event_type": event_type,
             "file_path": path,
             "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "file_extension": Path(path).suffix,
+            "file_size": Path(path).stat().st_size if Path(path).is_file() else 0,
+            "event_source": "file_monitor"
         }
 
         # Human-readable console output
@@ -55,8 +61,21 @@ class FolderMonitor(FileSystemEventHandler):
         # Persist to JSONL log
         self.save_event(event_data)
 
+        self.event_buffer.append(event_data)
+
+        if len(self.event_buffer) >= 5:
+            process_event(self.event_buffer)
+            self.event_buffer.clear()
+
         # Run behavioral detection on every event
         self._check_suspicious_activity(event_type, path)
+    
+    def _get_file_size(self, path):
+        try:
+            return Path(path).stat().st_size
+        except:
+            return 0
+    
 
     # Watchdog callback
 
@@ -77,6 +96,10 @@ class FolderMonitor(FileSystemEventHandler):
             # Showing the source and destination for renames
             self.log("RENAMED", f"{event.src_path} → {event.dest_path}")
 
+    def process_event(self, event):
+        print("Sending to heuristic engine:", event)
+
+    
     # Suspicious activity detection
 
     def _check_suspicious_activity(self, event_type: str, path: str):
