@@ -1,4 +1,4 @@
-# file_monitoring/config.py
+# monitoring/config.py
 import json
 from pathlib import Path
 from typing import Dict

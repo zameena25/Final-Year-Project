@@ -1,4 +1,4 @@
-# simulate_attack.py
+# src/ simulate_attack.py
 # Simulates ransomware + insider threat behavior to test the full pipeline
 # Run WHILE run_monitoring.py is active
 

@@ -1,4 +1,4 @@
-# 🛡️ NOVASPHERE
+# NOVASPHERE
 
 > Real-time ransomware detection and insider threat prevention through behavioral file system analysis.
 
@@ -22,7 +22,7 @@ patterns before serious damage occurs.
 
 | Feature | Description |
 |---|---|
-| 🔍 Real-time file monitoring | Tracks file creation, modification, deletion, and renaming |
+| 🔍 Real-time file monitoring | Tracks file creation, modification, deletion and renaming |
 | 🧠 Behavioral detection | Identifies ransomware-like activity through pattern analysis |
 | ⚡ Burst alert system | Sliding window detector fires when rapid file activity is detected |
 | 📋 JSONL event logging | Every event is persisted in structured logs for audit and review |

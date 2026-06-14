@@ -1,4 +1,4 @@
-# file_monitoring/main.py
+#monitoring/main.py
 
 import time
 from pathlib import Path
