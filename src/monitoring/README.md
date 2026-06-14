@@ -13,7 +13,7 @@
 NOVASPHERE is a behavioral cybersecurity system designed to detect and prevent
 ransomware attacks and insider threats in real time. Unlike traditional
 signature-based antivirus tools, NOVASPHERE continuously monitors file
-activities, user behavior, and system processes — identifying suspicious
+activities, user behavior, and system processes identifying suspicious
 patterns before serious damage occurs.
 
 ---
