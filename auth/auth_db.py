@@ -1,4 +1,4 @@
-#auth /  auth_db.py
+#auth/auth_db.py
 import sqlite3
 from pathlib import Path
 
