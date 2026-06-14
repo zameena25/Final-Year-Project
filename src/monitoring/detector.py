@@ -1,4 +1,4 @@
-# file_monitoring/detector.py
+#monitoring/detector.py
 
 import time
 from datetime import datetime
