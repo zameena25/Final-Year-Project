@@ -1,4 +1,4 @@
-#auth / totp_service.py
+#auth/totp_service.py
 
 import pyotp
 import qrcode
