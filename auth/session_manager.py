@@ -1,4 +1,4 @@
-#auth / session_manager.py
+#auth/session_manager.py
 
 import secrets
 from datetime import datetime, timedelta
