@@ -1,4 +1,4 @@
-#auth / auth_service.py
+#auth/auth_service.py
 import bcrypt 
 import uuid
 from .auth_db import get_connection
