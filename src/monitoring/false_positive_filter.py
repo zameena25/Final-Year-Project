@@ -1,4 +1,4 @@
-#file monitoring/false_positive_filter.py
+#monitoring/false_positive_filter.py
 
 import re
 from pathlib import Path
