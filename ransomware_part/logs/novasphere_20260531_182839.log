@@ -1,0 +1,18 @@
+[18:29:04] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_6.docx | +90 pts (RENAME_TO_RANSOMWARE_EXT, EXT_CHANGED(docx→locked)) | Total: 90
+[18:29:04] 🚨 HIGH RISK DETECTED | Score: 90 | File: C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_6.docx
+[18:29:04] ✅ Rollback successful — file restored to pre-attack state
+[18:29:04] 📧 ALERT: High-risk incident logged for administrator review
+[18:29:04] ------------------------------------------------------------
+[18:29:04] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_6.docx | +35 pts (RAPID_REPEAT(5x in 10s)) | Total: 35
+[18:29:04] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_6.docx | +35 pts (RAPID_REPEAT(6x in 10s)) | Total: 70
+[18:29:04] ⚠️  MEDIUM RISK | C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_6.docx | Score: 70 — monitoring closely
+[18:29:05] 🍯 HONEYPOT TRIGGERED! File: C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\HR_employee_data.docx
+[18:29:05] 🔥 Immediate response — attack caught before real damage!
+[18:29:05] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_2.docx | +90 pts (RENAME_TO_RANSOMWARE_EXT, EXT_CHANGED(docx→locked)) | Total: 90
+[18:29:05] 🚨 HIGH RISK DETECTED | Score: 90 | File: C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_2.docx
+[18:29:05] ✅ Rollback successful — file restored to pre-attack state
+[18:29:05] 📧 ALERT: High-risk incident logged for administrator review
+[18:29:05] ------------------------------------------------------------
+[18:29:05] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_2.docx | +35 pts (RAPID_REPEAT(5x in 10s)) | Total: 35
+[18:29:05] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_2.docx | +35 pts (RAPID_REPEAT(6x in 10s)) | Total: 70
+[18:29:05] ⚠️  MEDIUM RISK | C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_2.docx | Score: 70 — monitoring closely

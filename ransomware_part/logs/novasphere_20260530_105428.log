@@ -1,0 +1,87 @@
+[10:57:24] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_5.docx | +125 pts (RENAME_TO_RANSOMWARE_EXT, RAPID_REPEAT(5x in 10s), EXT_CHANGED(docx→locked)) | Total: 125
+[10:57:24] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_5.docx | +125 pts (RENAME_TO_RANSOMWARE_EXT, RAPID_REPEAT(6x in 10s), EXT_CHANGED(docx→locked)) | Total: 250
+[10:57:24] 🚨 HIGH RISK DETECTED | Score: 250 | File: C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_5.docx
+[10:57:24] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_5.docx.locked | +60 pts (RANSOMWARE_EXT) | Total: 60
+[10:57:24] ⚠️  MEDIUM RISK | C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_5.docx.locked | Score: 60 — monitoring closely
+[10:57:24] ✅ Rollback successful — file restored to pre-attack state
+[10:57:24] 📧 ALERT: High-risk incident logged for administrator review
+[10:57:24] ------------------------------------------------------------
+[10:57:24] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_5.docx.locked | +60 pts (RANSOMWARE_EXT) | Total: 120
+[10:57:24] 🚨 HIGH RISK DETECTED | Score: 120 | File: C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_5.docx.locked
+[10:57:24] ✅ Rollback successful — file restored to pre-attack state
+[10:57:24] 📧 ALERT: High-risk incident logged for administrator review
+[10:57:24] ------------------------------------------------------------
+[10:57:24] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_5.docx | +35 pts (RAPID_REPEAT(7x in 10s)) | Total: 35
+[10:57:24] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_5.docx | +35 pts (RAPID_REPEAT(8x in 10s)) | Total: 70
+[10:57:24] ⚠️  MEDIUM RISK | C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_5.docx | Score: 70 — monitoring closely
+[10:57:24] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_5.docx | +35 pts (RAPID_REPEAT(9x in 10s)) | Total: 105
+[10:57:24] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_5.docx.locked | +60 pts (RANSOMWARE_EXT) | Total: 60
+[10:57:24] ⚠️  MEDIUM RISK | C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_5.docx.locked | Score: 60 — monitoring closely
+[10:57:24] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_5.docx.locked | +60 pts (RANSOMWARE_EXT) | Total: 120
+[10:57:24] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_11.docx | +125 pts (RENAME_TO_RANSOMWARE_EXT, RAPID_REPEAT(5x in 10s), EXT_CHANGED(docx→locked)) | Total: 125
+[10:57:24] 🚨 HIGH RISK DETECTED | Score: 125 | File: C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_11.docx
+[10:57:24] ✅ Rollback successful — file restored to pre-attack state
+[10:57:24] 📧 ALERT: High-risk incident logged for administrator review
+[10:57:24] ------------------------------------------------------------
+[10:57:24] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_11.docx.locked | +60 pts (RANSOMWARE_EXT) | Total: 60
+[10:57:24] ⚠️  MEDIUM RISK | C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_11.docx.locked | Score: 60 — monitoring closely
+[10:57:24] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_11.docx | +35 pts (RAPID_REPEAT(6x in 10s)) | Total: 35
+[10:57:24] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_11.docx | +35 pts (RAPID_REPEAT(7x in 10s)) | Total: 70
+[10:57:24] ⚠️  MEDIUM RISK | C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_11.docx | Score: 70 — monitoring closely
+[10:57:24] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_11.docx | +35 pts (RAPID_REPEAT(8x in 10s)) | Total: 105
+[10:57:25] 🍯 HONEYPOT TRIGGERED! File: C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\HR_employee_data.docx
+[10:57:25] 🔥 Immediate response — attack caught before real damage!
+[10:57:25] 🍯 HONEYPOT TRIGGERED! File: C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\HR_employee_data.docx.locked
+[10:57:25] 🔥 Immediate response — attack caught before real damage!
+[10:57:25] 🍯 HONEYPOT TRIGGERED! File: C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\HR_employee_data.docx.locked
+[10:57:25] 🔥 Immediate response — attack caught before real damage!
+[10:57:25] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_10.docx | +125 pts (RENAME_TO_RANSOMWARE_EXT, RAPID_REPEAT(5x in 10s), EXT_CHANGED(docx→locked)) | Total: 125
+[10:57:25] 🚨 HIGH RISK DETECTED | Score: 125 | File: C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_10.docx
+[10:57:25] ✅ Rollback successful — file restored to pre-attack state
+[10:57:25] 📧 ALERT: High-risk incident logged for administrator review
+[10:57:25] ------------------------------------------------------------
+[10:57:25] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_10.docx.locked | +60 pts (RANSOMWARE_EXT) | Total: 60
+[10:57:25] ⚠️  MEDIUM RISK | C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_10.docx.locked | Score: 60 — monitoring closely
+[10:57:25] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_10.docx | +35 pts (RAPID_REPEAT(6x in 10s)) | Total: 35
+[10:57:25] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_10.docx | +35 pts (RAPID_REPEAT(7x in 10s)) | Total: 70
+[10:57:25] ⚠️  MEDIUM RISK | C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_10.docx | Score: 70 — monitoring closely
+[10:57:25] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_10.docx | +35 pts (RAPID_REPEAT(8x in 10s)) | Total: 105
+[10:57:26] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_3.docx | +125 pts (RENAME_TO_RANSOMWARE_EXT, RAPID_REPEAT(5x in 10s), EXT_CHANGED(docx→locked)) | Total: 125
+[10:57:26] 🚨 HIGH RISK DETECTED | Score: 125 | File: C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_3.docx
+[10:57:26] ✅ Rollback successful — file restored to pre-attack state
+[10:57:26] 📧 ALERT: High-risk incident logged for administrator review
+[10:57:26] ------------------------------------------------------------
+[10:57:26] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_3.docx.locked | +60 pts (RANSOMWARE_EXT) | Total: 60
+[10:57:26] ⚠️  MEDIUM RISK | C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_3.docx.locked | Score: 60 — monitoring closely
+[10:57:26] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_3.docx | +35 pts (RAPID_REPEAT(6x in 10s)) | Total: 35
+[10:57:26] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_3.docx | +35 pts (RAPID_REPEAT(7x in 10s)) | Total: 70
+[10:57:26] ⚠️  MEDIUM RISK | C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_3.docx | Score: 70 — monitoring closely
+[10:57:26] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_3.docx | +35 pts (RAPID_REPEAT(8x in 10s)) | Total: 105
+[10:57:26] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_7.docx | +125 pts (RENAME_TO_RANSOMWARE_EXT, RAPID_REPEAT(5x in 10s), EXT_CHANGED(docx→locked)) | Total: 125
+[10:57:26] 🚨 HIGH RISK DETECTED | Score: 125 | File: C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_7.docx
+[10:57:26] ✅ Rollback successful — file restored to pre-attack state
+[10:57:26] 📧 ALERT: High-risk incident logged for administrator review
+[10:57:26] ------------------------------------------------------------
+[10:57:26] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_7.docx.locked | +60 pts (RANSOMWARE_EXT) | Total: 60
+[10:57:26] ⚠️  MEDIUM RISK | C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_7.docx.locked | Score: 60 — monitoring closely
+[10:57:26] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_7.docx | +35 pts (RAPID_REPEAT(6x in 10s)) | Total: 35
+[10:57:26] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_7.docx | +35 pts (RAPID_REPEAT(7x in 10s)) | Total: 70
+[10:57:26] ⚠️  MEDIUM RISK | C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_7.docx | Score: 70 — monitoring closely
+[10:57:26] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_7.docx | +35 pts (RAPID_REPEAT(8x in 10s)) | Total: 105
+[10:57:27] 🍯 HONEYPOT TRIGGERED! File: C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\company_secrets.txt
+[10:57:27] 🔥 Immediate response — attack caught before real damage!
+[10:57:27] 🍯 HONEYPOT TRIGGERED! File: C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\company_secrets.txt.locked
+[10:57:27] 🔥 Immediate response — attack caught before real damage!
+[10:57:27] 🍯 HONEYPOT TRIGGERED! File: C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\company_secrets.txt.locked
+[10:57:27] 🔥 Immediate response — attack caught before real damage!
+[10:57:27] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_4.docx | +125 pts (RENAME_TO_RANSOMWARE_EXT, RAPID_REPEAT(5x in 10s), EXT_CHANGED(docx→locked)) | Total: 125
+[10:57:27] 🚨 HIGH RISK DETECTED | Score: 125 | File: C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_4.docx
+[10:57:27] ✅ Rollback successful — file restored to pre-attack state
+[10:57:27] 📧 ALERT: High-risk incident logged for administrator review
+[10:57:27] ------------------------------------------------------------
+[10:57:27] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_4.docx.locked | +60 pts (RANSOMWARE_EXT) | Total: 60
+[10:57:27] ⚠️  MEDIUM RISK | C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_4.docx.locked | Score: 60 — monitoring closely
+[10:57:27] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_4.docx | +35 pts (RAPID_REPEAT(6x in 10s)) | Total: 35
+[10:57:27] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_4.docx | +35 pts (RAPID_REPEAT(7x in 10s)) | Total: 70
+[10:57:27] ⚠️  MEDIUM RISK | C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_4.docx | Score: 70 — monitoring closely
+[10:57:27] [SCORE] C:\Users\nimsa\OneDrive\Documents\Visual Studio\NOVASPHERE\test_folder\project_report_4.docx | +35 pts (RAPID_REPEAT(8x in 10s)) | Total: 105

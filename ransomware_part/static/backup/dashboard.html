@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>NOVASPHERE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a0e1a;--bg2:#0f1425;--bg3:#141930;--bg4:#1a2040;
+  --border:#1e2a4a;--border2:#263660;
+  --cyan:#00d4ff;--cyan2:#0099cc;--cyan3:#004466;
+  --green:#00ff88;--green2:#00cc66;
+  --amber:#ffaa00;--amber2:#cc8800;
+  --red:#ff4444;--red2:#cc2222;
+  --text:#e0e8ff;--text2:#8899cc;--text3:#445577;
+  --font:'Exo 2',sans-serif;--mono:'Share Tech Mono',monospace;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:14px;min-height:100vh;overflow-x:hidden}
+.app{display:flex;height:100vh;overflow:hidden}
+.sidebar{width:220px;min-width:220px;background:var(--bg2);border-right:1px solid var(--border);display:flex;flex-direction:column}
+.logo{padding:20px 16px 16px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px}
+.logo-icon{width:34px;height:34px;border:1.5px solid var(--cyan);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--cyan);font-size:16px}
+.logo-text{font-size:15px;font-weight:600;letter-spacing:2px;color:var(--cyan)}
+.logo-sub{font-size:9px;color:var(--text2);letter-spacing:1px;margin-top:1px}
+.nav{flex:1;padding:12px 8px;display:flex;flex-direction:column;gap:2px}
+.nav-item{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:6px;cursor:pointer;color:var(--text2);font-size:13px;font-weight:400;transition:all .15s;border:1px solid transparent;user-select:none}
+.nav-item:hover{background:var(--bg3);color:var(--text);border-color:var(--border)}
+.nav-item.active{background:var(--bg4);color:var(--cyan);border-color:var(--border2)}
+.nav-item i{font-size:16px;width:18px;text-align:center}
+.nav-section{font-size:10px;letter-spacing:1.5px;color:var(--text3);padding:12px 10px 4px;font-family:var(--mono)}
+.sidebar-footer{padding:12px 8px;border-top:1px solid var(--border)}
+.status-pill{display:flex;align-items:center;gap:8px;padding:8px 10px;background:var(--bg3);border-radius:6px;font-size:12px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 6px var(--green)}
+.dot.off{background:var(--text3);box-shadow:none}
+.main{flex:1;display:flex;flex-direction:column;overflow:hidden}
+.topbar{height:52px;background:var(--bg2);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 20px;gap:16px}
+.topbar-title{font-size:15px;font-weight:500;flex:1}
+.topbar-badge{font-size:10px;font-family:var(--mono);padding:3px 8px;border-radius:4px;border:1px solid var(--border2);color:var(--text2)}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:6px;font-size:13px;font-weight:500;font-family:var(--font);cursor:pointer;border:1px solid;transition:all .15s;user-select:none}
+.btn-cyan{background:transparent;border-color:var(--cyan);color:var(--cyan)}
+.btn-cyan:hover{background:rgba(0,212,255,.1)}
+.btn-red{background:transparent;border-color:var(--red);color:var(--red)}
+.btn-red:hover{background:rgba(255,68,68,.1)}
+.btn-green{background:rgba(0,255,136,.08);border-color:var(--green);color:var(--green)}
+.btn-ghost{background:transparent;border-color:var(--border2);color:var(--text2)}
+.btn-ghost:hover{border-color:var(--text2);color:var(--text)}
+.content{flex:1;overflow-y:auto;padding:20px}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:16px}
+.card-title{font-size:11px;letter-spacing:1.5px;color:var(--text2);font-family:var(--mono);margin-bottom:12px;text-transform:uppercase}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+.stat-card{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:14px 16px}
+.stat-label{font-size:10px;letter-spacing:1px;color:var(--text2);font-family:var(--mono);text-transform:uppercase;margin-bottom:6px}
+.stat-value{font-size:26px;font-weight:300;font-family:var(--mono);color:var(--text);line-height:1}
+.stat-value.cyan{color:var(--cyan)}
+.stat-value.green{color:var(--green)}
+.stat-value.amber{color:var(--amber)}
+.stat-value.red{color:var(--red)}
+.stat-sub{font-size:11px;color:var(--text2);margin-top:4px}
+.badge{display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:500}
+.badge-critical{background:rgba(255,68,68,.15);color:var(--red);border:1px solid rgba(255,68,68,.3)}
+.badge-high{background:rgba(255,170,0,.15);color:var(--amber);border:1px solid rgba(255,170,0,.3)}
+.badge-medium{background:rgba(0,212,255,.12);color:var(--cyan);border:1px solid rgba(0,212,255,.25)}
+.badge-low{background:rgba(136,153,204,.1);color:var(--text2);border:1px solid var(--border)}
+.badge-open{background:rgba(255,68,68,.15);color:var(--red)}
+.badge-investigating{background:rgba(255,170,0,.15);color:var(--amber)}
+.badge-resolved{background:rgba(0,255,136,.1);color:var(--green)}
+.badge-active{background:rgba(0,255,136,.1);color:var(--green);border:1px solid rgba(0,255,136,.25)}
+.badge-inactive{background:rgba(136,153,204,.1);color:var(--text2)}
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;padding:8px 12px;font-size:10px;letter-spacing:1px;color:var(--text2);font-family:var(--mono);text-transform:uppercase;border-bottom:1px solid var(--border);font-weight:400}
+td{padding:10px 12px;border-bottom:1px solid var(--border);color:var(--text)}
+tr:hover td{background:rgba(255,255,255,.02)}
+tr:last-child td{border-bottom:none}
+.scan-container{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px}
+.scan-ring{position:relative;width:160px;height:160px;display:flex;align-items:center;justify-content:center}
+.scan-ring svg{position:absolute;top:0;left:0;width:100%;height:100%}
+.scan-btn-main{width:80px;height:80px;border-radius:50%;background:var(--bg3);border:2px solid var(--cyan);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;color:var(--cyan);font-size:28px;z-index:1}
+.scan-btn-main:hover{background:rgba(0,212,255,.1)}
+.scan-btn-main.scanning{border-color:var(--green);color:var(--green);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(0,255,136,.3)}50%{box-shadow:0 0 0 12px rgba(0,255,136,.0)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.ring-spin{animation:spin 3s linear infinite;transform-origin:80px 80px}
+.toggle-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border)}
+.toggle-row:last-child{border-bottom:none}
+.toggle{position:relative;width:40px;height:22px;flex-shrink:0}
+.toggle input{opacity:0;width:0;height:0}
+.toggle-slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background:var(--bg4);border:1px solid var(--border2);border-radius:22px;transition:.2s}
+.toggle-slider:before{content:"";position:absolute;height:16px;width:16px;left:2px;bottom:2px;background:var(--text2);border-radius:50%;transition:.2s}
+input:checked+.toggle-slider{background:rgba(0,212,255,.2);border-color:var(--cyan)}
+input:checked+.toggle-slider:before{transform:translateX(18px);background:var(--cyan)}
+.live-bar{height:6px;border-radius:3px;background:var(--bg4);overflow:hidden;margin-top:6px}
+.live-fill{height:100%;border-radius:3px;transition:width .5s ease}
+.process-row{display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);font-size:13px}
+.process-row:last-child{border-bottom:none}
+.empty{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px 20px;color:var(--text2);gap:12px}
+.empty i{font-size:40px;opacity:.3}
+.empty p{font-size:13px}
+.honeypot-row{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;background:var(--bg3);border-radius:6px;margin-bottom:8px;border:1px solid var(--border)}
+.alert-pill{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:12px 16px;display:flex;flex-direction:column;gap:4px}
+.alert-pill-num{font-size:24px;font-weight:300;font-family:var(--mono)}
+.alert-pill-label{font-size:11px;color:var(--text2);letter-spacing:.5px}
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="logo">
+      <div class="logo-icon"><i class="ti ti-shield-lock"></i></div>
+      <div>
+        <div class="logo-text">NOVASPHERE</div>
+        <div class="logo-sub">SECURITY THAT THINKS AHEAD</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="nav-section">MAIN</div>
+      <div class="nav-item active" data-page="dashboard" onclick="showPage('dashboard',this)"><i class="ti ti-layout-dashboard"></i> Dashboard</div>
+      <div class="nav-item" data-page="ransomware" onclick="showPage('ransomware',this)"><i class="ti ti-virus"></i> Ransomware Detection</div>
+      <div class="nav-section">MONITORING</div>
+      <div class="nav-item" data-page="live" onclick="showPage('live',this)"><i class="ti ti-activity"></i> Live Monitoring</div>
+      <div class="nav-item" data-page="deception" onclick="showPage('deception',this)"><i class="ti ti-bee"></i> Deception System</div>
+      <div class="nav-section">RESPONSE</div>
+      <div class="nav-item" data-page="quarantine" onclick="showPage('quarantine',this)"><i class="ti ti-lock"></i> Quarantine</div>
+      <div class="nav-item" data-page="alerts" onclick="showPage('alerts',this)"><i class="ti ti-bell"></i> Alerts</div>
+      <div class="nav-section">SYSTEM</div>
+      <div class="nav-item" data-page="logs" onclick="showPage('logs',this)"><i class="ti ti-file-text"></i> Logs</div>
+      <div class="nav-item" data-page="settings" onclick="showPage('settings',this)"><i class="ti ti-settings"></i> Settings</div>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="status-pill">
+        <div class="dot off" id="sidebar-dot"></div>
+        <span id="sidebar-status-text" style="color:var(--text2);font-size:12px">Inactive</span>
+      </div>
+    </div>
+  </aside>
+
+  <div class="main">
+    <div class="topbar">
+      <span class="topbar-title" id="page-title">Dashboard</span>
+      <span class="topbar-badge" id="monitor-path">...</span>
+      <span id="api-badge" class="badge badge-low">Connecting...</span>
+    </div>
+    <div class="content" id="content">
+      <div class="empty"><i class="ti ti-loader" style="animation:spin 1s linear infinite"></i><p>Starting NOVASPHERE...</p></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const API = 'http://localhost:5000/api';
+let S = { page:'dashboard', monitoring:false, status:{}, alerts:[], alertSummary:{}, quarantine:[], scores:{}, honeypots:[], logs:[], settings:{auto_quarantine:true,auto_kill_process:false}, apiOnline:false };
+
+async function req(path, method='GET', body=null) {
+  try {
+    const o = { method, headers:{'Content-Type':'application/json'} };
+    if (body) o.body = JSON.stringify(body);
+    const r = await fetch(API+path, o);
+    return await r.json();
+  } catch(e) { return null; }
+}
+
+async function refresh() {
+  const [status, alerts, quar, scores, honey, logs] = await Promise.all([
+    req('/status'), req('/alerts'), req('/quarantine'),
+    req('/scores'), req('/honeypots'), req('/logs?limit=100')
+  ]);
+  S.apiOnline = !!status;
+  const badge = document.getElementById('api-badge');
+  if (badge) { badge.textContent = S.apiOnline ? 'API: Online' : 'API: Starting...'; badge.className = 'badge '+(S.apiOnline?'badge-active':'badge-low'); }
+  if (status) {
+    S.status = status; S.monitoring = status.monitoring_active; S.settings = status.settings;
+    const dot = document.getElementById('sidebar-dot');
+    const txt = document.getElementById('sidebar-status-text');
+    const pth = document.getElementById('monitor-path');
+    if (dot) dot.className = 'dot'+(status.monitoring_active?'':' off');
+    if (txt) { txt.textContent = status.monitoring_active ? 'Monitoring Active' : 'Inactive'; txt.style.color = status.monitoring_active ? 'var(--green)' : 'var(--text2)'; }
+    if (pth) pth.textContent = (status.monitor_path||'').split(/[/\\]/).slice(-2).join('/');
+  }
+  if (alerts) { S.alerts = alerts.alerts||[]; S.alertSummary = alerts.summary||{}; }
+  if (quar) S.quarantine = quar.files||[];
+  if (scores) S.scores = scores.active_scores||{};
+  if (honey) S.honeypots = honey.honeypots||[];
+  if (logs) S.logs = logs.lines||[];
+  renderPage(S.page);
+}
+
+function showPage(page, el) {
+  S.page = page;
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  if (el) el.classList.add('active');
+  const titles = {dashboard:'Dashboard',ransomware:'Ransomware Detection',live:'Live Monitoring',deception:'Deception System',quarantine:'Quarantine Management',alerts:'Alerts Management',logs:'System Logs',settings:'Settings'};
+  document.getElementById('page-title').textContent = titles[page]||page;
+  renderPage(page);
+}
+
+function renderPage(page) {
+  const c = document.getElementById('content');
+  const pages = {dashboard:pgDashboard, ransomware:pgRansomware, live:pgLive, deception:pgDeception, quarantine:pgQuarantine, alerts:pgAlerts, logs:pgLogs, settings:pgSettings};
+  if (pages[page]) c.innerHTML = pages[page]();
+}
+
+function pgDashboard() {
+  const s = S.status; const sc = S.monitoring;
+  return `<div class="scan-container">
+    <div class="scan-ring">
+      <svg viewBox="0 0 160 160" fill="none">
+        <circle cx="80" cy="80" r="72" stroke="${sc?'#00ff88':'#1e2a4a'}" stroke-width="1" stroke-dasharray="4 4"/>
+        <circle cx="80" cy="80" r="60" stroke="${sc?'rgba(0,255,136,.3)':'var(--border)'}" stroke-width="1"/>
+        ${sc?'<circle cx="80" cy="80" r="72" stroke="#00ff88" stroke-width="1.5" stroke-dasharray="50 402" class="ring-spin"/>':''}
+      </svg>
+      <div class="scan-btn-main ${sc?'scanning':''}" onclick="doScan()"><i class="ti ti-${sc?'player-stop':'shield-check'}"></i></div>
+    </div>
+    <div style="margin-top:12px;font-size:13px;color:var(--text2);letter-spacing:1px;font-family:var(--mono)">${sc?'MONITORING ACTIVE — CLICK TO STOP':'CLICK TO START MONITORING'}</div>
+    <div style="display:flex;gap:12px;margin-top:16px">
+      <button class="btn btn-${sc?'red':'cyan'}" onclick="doScan()">${sc?'Stop Monitoring':'Start Monitoring'}</button>
+      <button class="btn btn-ghost" onclick="doReset()"><i class="ti ti-refresh"></i> Reset Scores</button>
+    </div>
+  </div>
+  <div style="font-size:11px;letter-spacing:1.5px;color:var(--text2);font-family:var(--mono);margin-bottom:12px">SECURITY OVERVIEW</div>
+  <div class="grid-4">
+    <div class="stat-card"><div class="stat-label">Files Scanned</div><div class="stat-value cyan">${s.files_scanned??0}</div><div class="stat-sub">in monitored folder</div></div>
+    <div class="stat-card"><div class="stat-label">Threats Detected</div><div class="stat-value ${(s.threats_detected??0)>0?'red':'green'}">${s.threats_detected??0}</div><div class="stat-sub">high + critical</div></div>
+    <div class="stat-card"><div class="stat-label">Protection Status</div><div class="stat-value" style="font-size:15px;padding-top:5px"><span class="badge ${sc?'badge-active':'badge-low'}">${sc?'Active':'Inactive'}</span></div><div class="stat-sub">${s.last_scan_time?'Started: '+s.last_scan_time:'Not started'}</div></div>
+    <div class="stat-card"><div class="stat-label">Quarantined</div><div class="stat-value ${(s.quarantine_count??0)>0?'amber':''}">${s.quarantine_count??0}</div><div class="stat-sub">files isolated</div></div>
+  </div>`;
+}
+
+function pgRansomware() {
+  const e = Object.entries(S.scores);
+  return `<div class="grid-3" style="margin-bottom:20px">
+    <div class="stat-card"><div class="stat-label">Active Threats</div><div class="stat-value red">${e.length}</div></div>
+    <div class="stat-card"><div class="stat-label">High Threshold</div><div class="stat-value amber">${S.status.high_threshold??80}</div><div class="stat-sub">triggers full response</div></div>
+    <div class="stat-card"><div class="stat-label">Medium Threshold</div><div class="stat-value cyan">${S.status.medium_threshold??50}</div><div class="stat-sub">triggers monitoring</div></div>
+  </div>
+  <div class="card">
+    <div class="card-title">Active Risk Scores</div>
+    ${e.length===0?'<div class="empty"><i class="ti ti-shield-check"></i><p>No active threats detected</p></div>':e.map(([f,sc])=>{const p=Math.min(100,Math.round(sc));const col=sc>=80?'var(--red)':sc>=50?'var(--amber)':'var(--cyan)';return`<div class="process-row"><div style="flex:1"><div style="font-family:var(--mono);font-size:12px">${f}</div></div><div style="width:140px;margin:0 16px"><div style="display:flex;justify-content:space-between;font-size:11px;color:var(--text2);margin-bottom:3px"><span>Score</span><span style="color:${col}">${sc}</span></div><div class="live-bar"><div class="live-fill" style="width:${p}%;background:${col}"></div></div></div><span class="badge ${sc>=80?'badge-critical':sc>=50?'badge-high':'badge-medium'}">${sc>=80?'HIGH':sc>=50?'MEDIUM':'LOW'}</span></div>`;}).join('')}
+  </div>`;
+}
+
+function pgLive() {
+  const e = Object.entries(S.scores);
+  return `<div class="grid-4" style="margin-bottom:20px">
+    <div class="stat-card"><div class="stat-label">High Risk Files</div><div class="stat-value red">${e.filter(([,v])=>v>=80).length}</div></div>
+    <div class="stat-card"><div class="stat-label">Medium Risk Files</div><div class="stat-value amber">${e.filter(([,v])=>v>=50&&v<80).length}</div></div>
+    <div class="stat-card"><div class="stat-label">Quarantined Files</div><div class="stat-value">${S.quarantine.length}</div></div>
+    <div class="stat-card"><div class="stat-label">Monitor Status</div><div class="stat-value" style="font-size:14px;padding-top:6px"><span class="badge ${S.monitoring?'badge-active':'badge-low'}">${S.monitoring?'Active':'Inactive'}</span></div></div>
+  </div>
+  <div class="card">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+      <div class="card-title" style="margin:0">Live Activity</div>
+      <div style="display:flex;align-items:center;gap:8px"><div class="dot ${S.monitoring?'':'off'}"></div><span style="font-size:12px;color:${S.monitoring?'var(--green)':'var(--text2)'}">${S.monitoring?'Monitoring Active':'Not Running'}</span></div>
+    </div>
+    ${e.length===0?'<div class="empty"><i class="ti ti-activity"></i><p>No active threats — system secure</p></div>':e.map(([f,sc])=>{const col=sc>=80?'var(--red)':sc>=50?'var(--amber)':'var(--cyan)';return`<div class="process-row"><div style="flex:1;font-family:var(--mono);font-size:12px">${f}</div><div style="font-family:var(--mono);font-size:14px;color:${col}">${sc}</div></div>`;}).join('')}
+  </div>`;
+}
+
+function pgDeception() {
+  return `<div class="grid-3" style="margin-bottom:20px">
+    <div class="stat-card"><div class="stat-label">Active Bait Files</div><div class="stat-value cyan">${S.honeypots.filter(h=>h.intact).length}</div></div>
+    <div class="stat-card"><div class="stat-label">Traps Triggered</div><div class="stat-value red">${S.honeypots.filter(h=>!h.intact).length}</div></div>
+    <div class="stat-card"><div class="stat-label">Active Defense</div><div class="stat-value" style="font-size:14px;padding-top:6px"><span class="badge badge-active">Enabled</span></div></div>
+  </div>
+  <div class="card">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+      <div class="card-title" style="margin:0">Honeypot Bait Files</div>
+      <span style="font-size:12px;color:var(--text2)">Any access triggers immediate CRITICAL alert</span>
+    </div>
+    ${S.honeypots.map(h=>`<div class="honeypot-row"><div style="display:flex;align-items:center;gap:10px"><i class="ti ti-file" style="color:var(--amber);font-size:16px"></i><div><div style="font-size:13px;font-family:var(--mono)">${h.name}</div><div style="font-size:11px;color:var(--text2);margin-top:2px">${h.path}</div></div></div><span class="badge ${h.intact?'badge-active':'badge-critical'}">${h.status}</span></div>`).join('')||'<div class="empty"><i class="ti ti-bee"></i><p>No honeypot files configured</p></div>'}
+  </div>`;
+}
+
+function pgQuarantine() {
+  return `<div class="card">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+      <div><div class="card-title" style="margin:0">Isolated Files</div><div style="font-size:12px;color:var(--text2);margin-top:4px">Files blocked due to ransomware or suspicious behavior</div></div>
+      <span class="badge ${S.quarantine.length>0?'badge-high':'badge-active'}">${S.quarantine.length} files</span>
+    </div>
+    ${S.quarantine.length===0?'<div class="empty" style="padding:60px 20px"><i class="ti ti-shield-check" style="font-size:48px;color:var(--green);opacity:.5"></i><p style="font-size:14px">No files currently in quarantine</p><p style="font-size:12px">System is secure</p></div>':
+    `<div class="table-wrap"><table><thead><tr><th>Filename</th><th>Size</th><th>Quarantined At</th><th>Status</th></tr></thead><tbody>${S.quarantine.map(f=>`<tr><td style="font-family:var(--mono);font-size:12px">${f.name}</td><td style="color:var(--text2)">${f.size} B</td><td style="color:var(--text2);font-family:var(--mono);font-size:11px">${f.modified}</td><td><span class="badge badge-critical">Isolated</span></td></tr>`).join('')}</tbody></table></div>`}
+  </div>`;
+}
+
+function pgAlerts() {
+  const sm = S.alertSummary;
+  return `<div class="grid-4" style="margin-bottom:20px">
+    <div class="alert-pill"><div class="alert-pill-num" style="color:var(--red)">${sm.Critical??0}</div><div class="alert-pill-label">Critical Alerts</div></div>
+    <div class="alert-pill"><div class="alert-pill-num" style="color:var(--amber)">${sm.High??0}</div><div class="alert-pill-label">High Alerts</div></div>
+    <div class="alert-pill"><div class="alert-pill-num" style="color:var(--cyan)">${sm.Medium??0}</div><div class="alert-pill-label">Medium Alerts</div></div>
+    <div class="alert-pill"><div class="alert-pill-num" style="color:var(--text2)">${sm.Low??0}</div><div class="alert-pill-label">Low Alerts</div></div>
+  </div>
+  <div class="card">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+      <div class="card-title" style="margin:0">All Alerts</div>
+      <button class="btn btn-ghost" onclick="doExport()"><i class="ti ti-download"></i> Export CSV</button>
+    </div>
+    ${S.alerts.length===0?'<div class="empty"><i class="ti ti-bell"></i><p>No alerts yet — run a scan first</p></div>':
+    `<div class="table-wrap"><table><thead><tr><th>ID</th><th>Severity</th><th>Type</th><th>File</th><th>Rule</th><th>Score</th><th>Time</th><th>Status</th></tr></thead><tbody>${S.alerts.map(a=>`<tr><td style="font-family:var(--mono);font-size:11px;color:var(--text2)">${a.id}</td><td><span class="badge badge-${a.severity.toLowerCase()}">${a.severity}</span></td><td>${a.type}</td><td style="font-family:var(--mono);font-size:11px">${a.file}</td><td style="font-family:var(--mono);font-size:11px;color:var(--text2)">${a.rule}</td><td style="color:${a.score>=80?'var(--red)':a.score>=50?'var(--amber)':'var(--text2)'};font-family:var(--mono)">${a.score}</td><td style="font-family:var(--mono);font-size:11px;color:var(--text2)">${a.timestamp}</td><td><span class="badge badge-${a.status.toLowerCase()}">${a.status}</span></td></tr>`).join('')}</tbody></table></div>`}
+  </div>`;
+}
+
+function pgLogs() {
+  const lines = S.logs.slice().reverse();
+  return `<div class="card">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+      <div class="card-title" style="margin:0">System Logs</div>
+      <span style="font-size:11px;color:var(--text2);font-family:var(--mono)">${lines.length} entries</span>
+    </div>
+    ${lines.length===0?'<div class="empty"><i class="ti ti-file-text"></i><p>No log entries yet</p></div>':
+    `<div style="font-family:var(--mono);font-size:12px;line-height:1.8">${lines.map(l=>{const col=l.includes('HIGH')||l.includes('HONEYPOT')||l.includes('CRITICAL')?'var(--red)':l.includes('MEDIUM')||l.includes('WARN')?'var(--amber)':l.includes('Rollback')||l.includes('Reset')||l.includes('success')?'var(--green)':'var(--text2)';return`<div style="padding:3px 0;border-bottom:1px solid var(--border);color:${col}">${l}</div>`;}).join('')}</div>`}
+  </div>`;
+}
+
+function pgSettings() {
+  const s = S.settings;
+  return `<div class="grid-2">
+    <div class="card">
+      <div class="card-title">Detection Settings</div>
+      <div class="toggle-row"><div><div style="font-size:13px">Auto Quarantine</div><div style="font-size:11px;color:var(--text2);margin-top:2px">Automatically isolate detected threats</div></div><label class="toggle"><input type="checkbox" ${s.auto_quarantine?'checked':''} onchange="doToggle('auto_quarantine',this.checked)"><span class="toggle-slider"></span></label></div>
+      <div class="toggle-row"><div><div style="font-size:13px">Auto Kill Process</div><div style="font-size:11px;color:var(--text2);margin-top:2px">Terminate suspicious processes</div></div><label class="toggle"><input type="checkbox" ${s.auto_kill_process?'checked':''} onchange="doToggle('auto_kill_process',this.checked)"><span class="toggle-slider"></span></label></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Scoring Thresholds</div>
+      <div class="toggle-row"><div><div style="font-size:13px">High Risk Threshold</div></div><span style="font-family:var(--mono);color:var(--red)">${S.status.high_threshold??80} pts</span></div>
+      <div class="toggle-row"><div><div style="font-size:13px">Medium Risk Threshold</div></div><span style="font-family:var(--mono);color:var(--amber)">${S.status.medium_threshold??50} pts</span></div>
+      <div class="toggle-row"><div><div style="font-size:13px">Score Decay After</div></div><span style="font-family:var(--mono);color:var(--text2)">20s inactivity</span></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title">Actions</div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn btn-cyan" onclick="doReset()"><i class="ti ti-refresh"></i> Reset All Scores</button>
+      <button class="btn btn-ghost" onclick="refresh()"><i class="ti ti-reload"></i> Refresh Data</button>
+    </div>
+  </div>`;
+}
+
+async function doScan() {
+  if (S.monitoring) { await req('/scan/stop','POST'); S.monitoring=false; }
+  else { const r=await req('/scan/start','POST'); if(r&&r.success) S.monitoring=true; }
+  await refresh();
+}
+async function doToggle(k,v) { const r=await req('/settings','POST',{[k]:v}); if(r) S.settings=r.settings; }
+async function doReset() { await req('/reset','POST'); await refresh(); }
+function doExport() {
+  const rows=['ID,Severity,Type,File,Rule,Score,Time,Status',...S.alerts.map(a=>`${a.id},${a.severity},${a.type},${a.file},${a.rule},${a.score},${a.timestamp},${a.status}`)];
+  const b=new Blob([rows.join('\n')],{type:'text/csv'});
+  const u=URL.createObjectURL(b);
+  const a=document.createElement('a');a.href=u;a.download='novasphere_alerts.csv';a.click();
+}
+
+refresh();
+setInterval(refresh, 3000);
+</script>
+</body>
+</html>

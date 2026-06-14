@@ -1,0 +1,131 @@
+{"event_type": "CREATED", "file_path": "C:\\Users\\User\\Downloads\\New Text Document.txt", "timestamp": "2026-05-05 21:45:30"}
+{"event_type": "RENAMED", "file_path": "C:\\Users\\User\\Downloads\\New Text Document.txt \u2192 C:\\Users\\User\\Downloads\\test (2).txt", "timestamp": "2026-05-05 21:45:35"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\test (2).txt", "timestamp": "2026-05-05 21:45:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\test (2).txt", "timestamp": "2026-05-05 21:45:51"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\desktop.ini", "timestamp": "2026-05-05 21:52:48"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\Adobe Photoshop Installer.exe", "timestamp": "2026-05-05 22:01:44"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\ARX-3.9.1-windows-installer.exe", "timestamp": "2026-05-05 22:01:45"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\QBooks\\AutoStartSetup.exe", "timestamp": "2026-05-05 22:01:45"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\BurpSuiteCommunity.exe", "timestamp": "2026-05-05 22:01:45"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\burpsuite_community_windows-x64_v2024_12_1.exe", "timestamp": "2026-05-05 22:01:45"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\Canva Setup 1.105.0.exe", "timestamp": "2026-05-05 22:01:45"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\ChatGPT Installer (1).exe", "timestamp": "2026-05-05 22:01:45"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\Coloring Book_ Drawing For Adults And Kids Installer.exe", "timestamp": "2026-05-05 22:01:45"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\Docker Desktop Installer.exe", "timestamp": "2026-05-05 22:01:45"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\draw.io-29.5.2-windows-installer.exe", "timestamp": "2026-05-05 22:01:45"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\FigmaSetup.exe", "timestamp": "2026-05-05 22:01:45"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 11, "window_seconds": 0.74, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\FigmaSetup.exe", "timestamp": "2026-05-05 22:01:45"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\Firefox Installer.exe", "timestamp": "2026-05-05 22:01:45"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 12, "window_seconds": 0.78, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\Firefox Installer.exe", "timestamp": "2026-05-05 22:01:45"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\GitHubDesktopSetup-x64.exe", "timestamp": "2026-05-05 22:01:45"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 13, "window_seconds": 0.91, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\GitHubDesktopSetup-x64.exe", "timestamp": "2026-05-05 22:01:45"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\handbrake-1.9.0-installer_KdMA-A1.exe", "timestamp": "2026-05-05 22:01:45"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 14, "window_seconds": 0.95, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\handbrake-1.9.0-installer_KdMA-A1.exe", "timestamp": "2026-05-05 22:01:45"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\handbrake-1.9.0-installer.exe", "timestamp": "2026-05-05 22:01:45"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 15, "window_seconds": 0.95, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\handbrake-1.9.0-installer.exe", "timestamp": "2026-05-05 22:01:45"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\ThirdParty\\MSOffice\\vstor20\\install.exe", "timestamp": "2026-05-05 22:01:45"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 16, "window_seconds": 1.0, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\ThirdParty\\MSOffice\\vstor20\\install.exe", "timestamp": "2026-05-05 22:01:45"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Crack\\Keygen.exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 17, "window_seconds": 1.15, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Crack\\Keygen.exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\LockDownBrowser-2-1-2-10-355732432.exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 18, "window_seconds": 1.21, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\LockDownBrowser-2-1-2-10-355732432.exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\Miro-setup.exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 19, "window_seconds": 1.27, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\Miro-setup.exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\MSTeamsSetupx64_s_8DE0D4D4DBAE67B-3-0_c_w_.exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 20, "window_seconds": 1.34, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\MSTeamsSetupx64_s_8DE0D4D4DBAE67B-3-0_c_w_.exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\nmap-7.95-setup (1).exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 21, "window_seconds": 1.37, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\nmap-7.95-setup (1).exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\nmap-7.95-setup.exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 22, "window_seconds": 1.37, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\nmap-7.95-setup.exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\Notion Setup 7.6.1.exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 23, "window_seconds": 1.39, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\Notion Setup 7.6.1.exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\npcap-1.80.exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 24, "window_seconds": 1.39, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\npcap-1.80.exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\OpenVisualTraceroute2.1.0.exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 25, "window_seconds": 1.43, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\OpenVisualTraceroute2.1.0.exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\OperaSetup.exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 26, "window_seconds": 1.44, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\OperaSetup.exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\Packet_Tracer822_64bit_setup_signed.exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 27, "window_seconds": 1.48, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\Packet_Tracer822_64bit_setup_signed.exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\ProtonVPN_v4.3.4_x64.exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 28, "window_seconds": 1.65, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\ProtonVPN_v4.3.4_x64.exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\python-3.13.5-amd64 (1).exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 29, "window_seconds": 1.68, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\python-3.13.5-amd64 (1).exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\python-3.13.5-amd64.exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 30, "window_seconds": 1.68, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\python-3.13.5-amd64.exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\python-3.14.2-amd64.exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 31, "window_seconds": 1.68, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\python-3.14.2-amd64.exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\python-3.14.2-amd64 (1).exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 32, "window_seconds": 1.68, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\python-3.14.2-amd64 (1).exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\quickbooks-download_3.2.6\\quickbooks-download_3.2.6.exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 33, "window_seconds": 1.74, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\quickbooks-download_3.2.6\\quickbooks-download_3.2.6.exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\QuickShareSetup.exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 34, "window_seconds": 1.75, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\QuickShareSetup.exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\QBooks\\setup.exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 35, "window_seconds": 1.88, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\QBooks\\setup.exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\My_Dream_Setup_--_fitgirl-repacks.site_--_\\setup.exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 36, "window_seconds": 1.88, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\My_Dream_Setup_--_fitgirl-repacks.site_--_\\setup.exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Setup.exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 37, "window_seconds": 1.89, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Setup.exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\smac27_setup.exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 38, "window_seconds": 1.93, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\smac27_setup.exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\SteamSetup.exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 39, "window_seconds": 1.99, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\SteamSetup.exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\TableauPublicDesktop-64bit-2025-2-4.exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 40, "window_seconds": 2.02, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\TableauPublicDesktop-64bit-2025-2-4.exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\SysinternalsSuite\\tcpview.exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 41, "window_seconds": 2.04, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\SysinternalsSuite\\tcpview.exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\TCPView (1)\\tcpview.exe", "timestamp": "2026-05-05 22:01:46"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 42, "window_seconds": 2.05, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\TCPView (1)\\tcpview.exe", "timestamp": "2026-05-05 22:01:46"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\Thunderbird Setup 138.0.exe", "timestamp": "2026-05-05 22:01:47"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 43, "window_seconds": 2.08, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\Thunderbird Setup 138.0.exe", "timestamp": "2026-05-05 22:01:47"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\tsetup-x64.5.10.7.exe", "timestamp": "2026-05-05 22:01:47"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 44, "window_seconds": 2.11, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\tsetup-x64.5.10.7.exe", "timestamp": "2026-05-05 22:01:47"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\TypingMaster11.exe", "timestamp": "2026-05-05 22:01:47"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 45, "window_seconds": 2.12, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\TypingMaster11.exe", "timestamp": "2026-05-05 22:01:47"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\utorrent_installer.exe", "timestamp": "2026-05-05 22:01:47"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 46, "window_seconds": 2.21, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\utorrent_installer.exe", "timestamp": "2026-05-05 22:01:47"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\utweb_installer.exe", "timestamp": "2026-05-05 22:01:47"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 47, "window_seconds": 2.22, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\utweb_installer.exe", "timestamp": "2026-05-05 22:01:47"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\QBooks\\Data1.cab", "timestamp": "2026-05-05 22:01:47"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 48, "window_seconds": 2.23, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\QBooks\\Data1.cab", "timestamp": "2026-05-05 22:01:47"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\ThirdParty\\CRT12\\vcredist_x64.exe", "timestamp": "2026-05-05 22:01:47"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 49, "window_seconds": 2.24, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\ThirdParty\\CRT12\\vcredist_x64.exe", "timestamp": "2026-05-05 22:01:47"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\ThirdParty\\CRT22\\vc_redist.x64.exe", "timestamp": "2026-05-05 22:01:47"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 50, "window_seconds": 2.26, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\ThirdParty\\CRT22\\vc_redist.x64.exe", "timestamp": "2026-05-05 22:01:47"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\ThirdParty\\CRT14\\vc_redist.x64.exe", "timestamp": "2026-05-05 22:01:47"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 51, "window_seconds": 2.26, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\ThirdParty\\CRT14\\vc_redist.x64.exe", "timestamp": "2026-05-05 22:01:47"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\ThirdParty\\CRT14\\vc_redist.x86.exe", "timestamp": "2026-05-05 22:01:47"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 52, "window_seconds": 2.27, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\ThirdParty\\CRT14\\vc_redist.x86.exe", "timestamp": "2026-05-05 22:01:47"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\vlc-3.0.21-win64.exe", "timestamp": "2026-05-05 22:01:47"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 53, "window_seconds": 2.29, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\vlc-3.0.21-win64.exe", "timestamp": "2026-05-05 22:01:47"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\ThirdParty\\MSOffice\\vstor.exe", "timestamp": "2026-05-05 22:01:47"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 54, "window_seconds": 2.33, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\ThirdParty\\MSOffice\\vstor.exe", "timestamp": "2026-05-05 22:01:47"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\ThirdParty\\MSOffice\\vstor30.exe", "timestamp": "2026-05-05 22:01:47"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 55, "window_seconds": 2.33, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\ThirdParty\\MSOffice\\vstor30.exe", "timestamp": "2026-05-05 22:01:47"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\ThirdParty\\MSOffice\\vstor30sp1-KB949258-x86.exe", "timestamp": "2026-05-05 22:01:47"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 56, "window_seconds": 2.34, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\ThirdParty\\MSOffice\\vstor30sp1-KB949258-x86.exe", "timestamp": "2026-05-05 22:01:47"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\ThirdParty\\MSOffice\\vstor40_x64.exe", "timestamp": "2026-05-05 22:01:47"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 57, "window_seconds": 2.34, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\ThirdParty\\MSOffice\\vstor40_x64.exe", "timestamp": "2026-05-05 22:01:47"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\ThirdParty\\MSOffice\\vstor40_x86.exe", "timestamp": "2026-05-05 22:01:47"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 58, "window_seconds": 2.35, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\ThirdParty\\MSOffice\\vstor40_x86.exe", "timestamp": "2026-05-05 22:01:47"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\weka-3-8-6-azul-zulu-windows.exe", "timestamp": "2026-05-05 22:01:47"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 59, "window_seconds": 2.37, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\weka-3-8-6-azul-zulu-windows.exe", "timestamp": "2026-05-05 22:01:47"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\weka-3.9.6-installer_c9q-4O1.exe", "timestamp": "2026-05-05 22:01:47"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 60, "window_seconds": 2.37, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\weka-3.9.6-installer_c9q-4O1.exe", "timestamp": "2026-05-05 22:01:47"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\windowsdesktop-runtime-8.0.12-win-x64.exe", "timestamp": "2026-05-05 22:01:47"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 61, "window_seconds": 2.38, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\windowsdesktop-runtime-8.0.12-win-x64.exe", "timestamp": "2026-05-05 22:01:47"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\ThirdParty\\MSOffice\\WindowsXP-KB915865-v11-x86-ENU.exe", "timestamp": "2026-05-05 22:01:47"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 62, "window_seconds": 2.39, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\ThirdParty\\MSOffice\\WindowsXP-KB915865-v11-x86-ENU.exe", "timestamp": "2026-05-05 22:01:47"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\Wireshark-4.4.3-x64.exe", "timestamp": "2026-05-05 22:01:47"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 63, "window_seconds": 2.4, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\Wireshark-4.4.3-x64.exe", "timestamp": "2026-05-05 22:01:47"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Readme.txt", "timestamp": "2026-05-05 22:01:47"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 64, "window_seconds": 2.41, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\_Getintopc.com_Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Intuit_QuickBooks_Enterprise_Solutions_v23.0\\Readme.txt", "timestamp": "2026-05-05 22:01:47"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\Zotero-7.0.21_x64_setup.exe", "timestamp": "2026-05-05 22:01:47"}
+{"alert": "RAPID_FILE_ACTIVITY", "event_count": 65, "window_seconds": 2.49, "trigger_event": "MODIFIED", "trigger_path": "C:\\Users\\User\\Downloads\\Zotero-7.0.21_x64_setup.exe", "timestamp": "2026-05-05 22:01:47"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\Annual OSH Training Plan - 2026.xlsx new.xlsx - reply (6).xlsx", "timestamp": "2026-05-05 22:19:01"}
+{"event_type": "CREATED", "file_path": "C:\\Users\\User\\Downloads\\New Text Document.txt", "timestamp": "2026-05-30 10:20:27", "file_extension": ".txt", "file_size": 0, "event_source": "file_monitor"}
+{"event_type": "RENAMED", "file_path": "C:\\Users\\User\\Downloads\\New Text Document.txt -> C:\\Users\\User\\Downloads\\testing.txt", "timestamp": "2026-05-30 10:20:32", "file_extension": ".txt", "file_size": 0, "event_source": "file_monitor"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\testing.txt", "timestamp": "2026-05-30 10:20:43", "file_extension": ".txt", "file_size": 15, "event_source": "file_monitor"}
+{"event_type": "DELETED", "file_path": "C:\\Users\\User\\Downloads\\testing.txt", "timestamp": "2026-05-30 10:20:47", "file_extension": ".txt", "file_size": 0, "event_source": "file_monitor"}
+{"event_type": "MODIFIED", "file_path": "C:\\Users\\User\\Downloads\\desktop.ini", "timestamp": "2026-05-30 10:37:09", "file_extension": ".ini", "file_size": 282, "event_source": "file_monitor"}

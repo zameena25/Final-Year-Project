@@ -1,0 +1,30 @@
+{
+  "monitored_paths": [
+    ".",
+    "C:\\Users\\User\\Documents",
+    "C:\\Users\\User\\Downloads",
+    "C:\\Users\\User\\Desktop"
+  ],
+  "critical_paths": [
+    "Documents",
+    "Downloads",
+    "Desktop"
+  ],
+  "ignore_folders": [
+    ".next",
+    "node_modules",
+    "__pycache__",
+    ".git",
+    ".venv",
+    "venv",
+    "env",
+    "logs",
+    ".lock",
+    "tmp"
+  ],
+  "suspicious_event_threshold": 12,
+  "suspicious_time_window": 5,
+  "buffer_size": 10,
+  "log_file": "logs/events.jsonl",
+  "alert_log_file": "logs/alerts.jsonl"
+}
